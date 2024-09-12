@@ -1,0 +1,38 @@
+-- ANALYSING TRENDS AND PATTERNS FROM CLEANED DATA
+
+--1) First find out how much on an average each type of member uses bike
+SELECT member_casual,
+  AVG(ride_length_minute) as Avg_ride_length
+FROM `ornate-apricot-435209-g7.tripdata.clean_tripdata`
+GROUP BY member_casual;
+
+--2) Find out how often each type of member used bike from december 2023 to april 2024
+SELECT member_casual,
+  COUNT(*) as num_rides
+FROM `ornate-apricot-435209-g7.tripdata.clean_tripdata`
+GROUP BY member_casual;
+
+--3) Find out at what time in a day each member uses bike by showing frequency at each hour for each member type
+SELECT member_casual,
+  start_hour,
+  count(*) as num_rides
+FROM `ornate-apricot-435209-g7.tripdata.clean_tripdata`
+GROUP BY member_casual, start_hour
+ORDER BY member_casual, start_hour;
+
+--4) Find out at which week day how often each member uses bike
+SELECT member_casual,
+  day_of_week,
+  count(*) as num_rides
+FROM `ornate-apricot-435209-g7.tripdata.clean_tripdata`
+GROUP BY member_casual, day_of_week
+ORDER BY member_casual, day_of_week;
+
+--5) Find out how often in each month each member has used bike
+SELECT member_casual,
+  EXTRACT(MONTH FROM started_at) as month,
+  EXTRACT(YEAR FROM started_at) as year,
+  COUNT(*) AS num_rides
+FROM `ornate-apricot-435209-g7.tripdata.clean_tripdata`
+GROUP BY member_casual, month, year
+ORDER BY member_casual, month, year;
