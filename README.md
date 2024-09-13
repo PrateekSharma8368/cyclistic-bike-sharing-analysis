@@ -94,6 +94,10 @@ ORDER BY member_casual, month, year;
 ```
 [Click here to visit complete Data Analysis SQL Queries](https://github.com/PrateekSharma8368/cyclistic-bike-sharing-analysis/blob/main/SQL_code_file/Complete_analysis_SQL_queries.txt)
 
+## Data Visualization
+Tableau Public is used for creating Data visuals and Dashboard.
+[Click here to view data visuals dashboard](https://github.com/PrateekSharma8368/cyclistic-bike-sharing-analysis/blob/main/Data%20Visualization/Cyclistic%20Bike-Share%20Dash.png)
+
 ## Key Findings
 * **Longer rides:** Casual riders have longer ride durations than annual members.
 * **Ride frequency:** Annual members use bikes more frequently, but for shorter trips.
