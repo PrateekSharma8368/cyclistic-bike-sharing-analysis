@@ -7,4 +7,4 @@ The primary goal is to uncover significant differences in how these 2 groups use
 
 ## Data Source
 Cyclistic bike share data has been used, This is a public dataset that you can use to explore how different customer types are using Cyclistic bike.
-
+[Click here to View/Dpwnload RAW data](https://github.com/PrateekSharma8368/cyclistic-bike-sharing-analysis/tree/main/RAW%20data)
